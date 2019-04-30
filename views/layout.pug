@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= `${title} | ${h.siteName}`
+    link(rel='stylesheet', href='/dist/App.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    .content
+      block content
+
+    block scripts
+      script(src="/dist/App.bundle.js")
