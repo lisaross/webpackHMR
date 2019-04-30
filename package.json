@@ -1,0 +1,16 @@
+{
+  "name": "webpackhmr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lisaross/webpackHMR.git",
+  "author": "Lisa Ross <lisa@thisisbroad.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "start-server-webpack-plugin": "^2.2.5",
+    "webpack": "^4.30.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
