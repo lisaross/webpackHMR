@@ -2,12 +2,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 
-/*
-  webpack sees every file as a module.
-  How to handle those files is up to loaders.
-  We only have a single entry point (a .js file) and everything is required from that js file
-*/
-
 // This is our JavaScript rule that specifies what to do with .js files
 const javascript = {
   test: /\.(js)$/, // see how we match anything that ends in `.js`? Cool
@@ -50,8 +44,6 @@ const config = {
     // we only have 1 entry, but I've set it up for multiple in the future
     App: './public/scripts/app.js'
   },
-  // we're using sourcemaps and here is where we specify which kind of sourcemap to use
-  devtool: 'source-map',
   // Once things are done, we kick it out to a file.
   output: {
     // path is a built in node module
